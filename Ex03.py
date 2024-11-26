@@ -2,12 +2,13 @@
 
 Este algoritmo funciona da seguinte forma:
 
-A função recebe quatro argumentos: primeiro o número de discos a serem movidos, o disco de origem, o destino do disco e a haste de auxílio para movimentar os discos.
+A função recebe quatro argumentos: (primeiro) o número de discos a serem movidos, (segundo) o disco de origem, (terceiro) o destino do disco e (quarto) a haste de auxílio para movimentar os discos.
 
-Para cada chamada, a função se chamará duas vezes, recursivamente. Seguindo o princípio da pilha de chamadas, a última chamada que chegar no caso base será a primeira a ser resolvida e retornada.
+Para cada chamada, a função se chamará recursivamente duas vezes.
 
 A primeira chamada move o disco de origem para a haste auxiliar.
-A segunda retorna os discos movidos para a haste auxilar para a haste de destino.
+
+A segunda retorna os discos movidos da haste auxilar para a haste de destino.
 
 Recursivamente, a função se chama até chegar no caso base (0 discos a serem movidos). Com isso, as funções são retornadas, e entre elas, é printado as ações de movimentação dos discos até concluir o objetivo da Torre de Hanói.
 
